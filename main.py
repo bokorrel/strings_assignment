@@ -27,15 +27,16 @@ print(report)
 player = 'Frank Rijkaard'
 
 # use slicing and the find-method (help) to isolate and store the player's first name.
-first_name = player[0:5]
+first_name = player[:player.find(" ")]
 print(first_name)
 
 # use find, slicing and len to isolate and store the length of their last name.
-last_name_len = len(player[6:14])
+last_name_len = len(player[player.find(" ")+1:])
 print(last_name_len)
 
 # isolate and store the player's name in this format: G. von Examplestein
-name_short = player[0] + '. ' + player[6:14]
+last_name = player[player.find(" ")+1:]
+name_short = player[0] + '. ' + last_name
 print(name_short)
 
 # this is what the crowd chants when it looks like your player is going to score a goal 
