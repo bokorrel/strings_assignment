@@ -20,7 +20,7 @@ print(scorers)
 # Use f-strings or the +-operator to create a single string with information about who scored when in the format:
 # <scorer_name> scored in the <when_they_scored>nd minute
 # <scorer_name> scored in the <when_they_scored>th minute
-report = f"{player_1} scored in the {str(goal_0)}nd minute\n{player_2} scored in the {str(goal_1)}th minute"
+report = f"{player_1} scored in the {goal_0}nd minute\n{player_2} scored in the {goal_1}th minute"
 print(report)
 
 # hoose a player that played in the soccer match and store his name as a string in the variable player.
